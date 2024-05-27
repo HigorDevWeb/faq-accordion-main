@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "WorkSansItalic";
+  src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "WorkSansVariable";
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mainBackGroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.contentContainer {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 10rem;
+  font-family: "WorkSansVariable";
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.duvida {
+  margin-bottom: 10px;
+  overflow: hidden; /* Adicionado para esconder o texto quando não está ativo */
+}
+
+/* Estilo comum para todos os botões */
+
+/* Posicionamento dos botões */
+.plusImg1,
+.plusImg2,
+.plusImg3,
+.plusImg4 {
+  position: relative;
+  left: 38.9rem;
+  bottom: 2.8rem;
+  cursor: pointer;
+}
+.minusImg1,
+.minusImg2,
+.minusImg3,
+.minusImg4 {
+  position: relative;
+  left: 36.7rem;
+  bottom: 2.8rem;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.toggle-btn.active .plusImg1,
+.toggle-btn.active .plusImg2,
+.toggle-btn.active .plusImg3,
+.toggle-btn.active .plusImg4,
+.toggle-btn.active .minusImg1,
+.toggle-btn.active .minusImg2,
+.toggle-btn.active .minusImg3,
+.toggle-btn.active .minusImg4 {
+  display: none;
+}
+
+.paragrafo {
+  display: none;
+  margin-top: 10px;
+  color: #666;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.duvida.active .paragrafo {
+  display: block;
+}
